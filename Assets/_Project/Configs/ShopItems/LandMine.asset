@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed94e9ee16b49f4ab8050f90d97019e, type: 3}
+  m_Name: LandMine
+  m_EditorClassIdentifier: 
+  Price: 10
+  ItemName: Mine
+  Item: {fileID: 8764433219686924026, guid: 657a84ca3a36bb64fabd1fa52b88221e, type: 3}
+  AvailableItem: {fileID: 8114509838456435789, guid: 8dbde1a8be9f2af438987a25f64f4ef0, type: 3}
+  UnavailableItem: {fileID: 0}
