@@ -13,7 +13,18 @@ MonoBehaviour:
   m_Name: StandardTurret
   m_EditorClassIdentifier: 
   Price: 50
-  ItemName: Standard
+  ItemName:
+    m_TableReference:
+      m_TableCollectionName: GUID:1da9d39d1d1c3734c8ea2b80d390769a
+    m_TableEntryReference:
+      m_KeyId: 465319638654976
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   Item: {fileID: 7128899950974760747, guid: 1a782c4a9a6dbfe46a9e321078d7c0e8, type: 3}
   AvailableItem: {fileID: 4008185484270189035, guid: ee807005de660ba4a964f2567c34c1ca, type: 3}
   UnavailableItem: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []

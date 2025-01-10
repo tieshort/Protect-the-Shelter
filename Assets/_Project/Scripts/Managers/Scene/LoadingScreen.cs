@@ -8,12 +8,14 @@ public class LoadingScreen : MonoBehaviour
 {
     [SerializeField] private CanvasGroup canvasGroup;
     [SerializeField] private Slider progressBar;
-    [SerializeField] private TMP_Text progressText;
+    [SerializeField] private GameObject progressText;
+    private LoadingTextValues loadingTextValues;
 
     private void Awake()
     {
         progressBar.minValue = 0;
         progressBar.maxValue = 1;
+        loadingTextValues = progressText.GetComponent<LoadingTextValues>();
     }
 
     private void Start()
@@ -35,7 +37,7 @@ public class LoadingScreen : MonoBehaviour
 
     private IEnumerator LoadCoroutine(AsyncOperation Loading, bool allowSceneActivation)
     {
-        progressText.text = "Loading in progress...";
+        loadingTextValues.SetLoadingInProgressText();
         // StartCoroutine(FadeLoadingScreen(1, 0.1f));
         canvasGroup.alpha = 1;
         Loading.allowSceneActivation = allowSceneActivation;
@@ -47,7 +49,7 @@ public class LoadingScreen : MonoBehaviour
             if (!allowSceneActivation && progress >= 0.9f)
             {
                 progress = 1;
-                progressText.text = "Loading complete. Press any key to continue.";
+                loadingTextValues.SetLoadingCompleteText();
             }
             progressBar.value = progress;
 

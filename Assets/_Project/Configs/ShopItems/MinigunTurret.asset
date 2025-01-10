@@ -13,7 +13,18 @@ MonoBehaviour:
   m_Name: MinigunTurret
   m_EditorClassIdentifier: 
   Price: 100
-  ItemName: Minigun
+  ItemName:
+    m_TableReference:
+      m_TableCollectionName: GUID:1da9d39d1d1c3734c8ea2b80d390769a
+    m_TableEntryReference:
+      m_KeyId: 465404753666048
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   Item: {fileID: 7128899950974760747, guid: 2693ae21a197d2f4ea2c4e37f0ca3cf9, type: 3}
   AvailableItem: {fileID: 4008185484270189035, guid: e38572442191d07419bec61ffb530c56, type: 3}
   UnavailableItem: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []

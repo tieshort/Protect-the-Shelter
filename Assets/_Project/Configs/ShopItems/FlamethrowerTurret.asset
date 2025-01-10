@@ -13,7 +13,18 @@ MonoBehaviour:
   m_Name: FlamethrowerTurret
   m_EditorClassIdentifier: 
   Price: 75
-  ItemName: Flame
+  ItemName:
+    m_TableReference:
+      m_TableCollectionName: GUID:1da9d39d1d1c3734c8ea2b80d390769a
+    m_TableEntryReference:
+      m_KeyId: 465375246737408
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   Item: {fileID: 7128899950974760747, guid: 71b616e0714ad654cbf07393119a37b3, type: 3}
   AvailableItem: {fileID: 4008185484270189035, guid: ab26f9345ff6cef409d0e9c1a2ac9ed2, type: 3}
   UnavailableItem: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []

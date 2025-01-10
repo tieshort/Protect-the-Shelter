@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerStatsUI : MonoBehaviour
+public class IngameUI : MonoBehaviour
 {
     [SerializeField] private TMP_Text lives;
     private int maxLives;
@@ -20,7 +20,7 @@ public class PlayerStatsUI : MonoBehaviour
         {
             Button button = Instantiate(buttonPref, btnsLayout.transform);
             var text = button.GetComponentInChildren<TMP_Text>();
-            text.text = $"{item.ItemName}\n{item.Price}";
+            text.text = $"{item.ItemName.GetLocalizedString()}\n{item.Price}";
             button.onClick.AddListener(() => BuildManager.Instance.SetObjectToBuild(item));
         }
         maxLives = GameManager.Instance.PlayerHealth;
@@ -30,7 +30,7 @@ public class PlayerStatsUI : MonoBehaviour
     {
         lives.text = $"{GameManager.Instance.PlayerHealth}/{maxLives} HP";
         money.text = $"{GameManager.Instance.PlayerMoney} $";
-        timeScaleText.text = $"Game speed: {Time.timeScale}x";
-        waveNumberText.text = $"Wave: {WaveSpawner.WaveNumber}/{WaveSpawner.MaxWaves}";
+        timeScaleText.text = $"Скорость игры: {Time.timeScale}x";
+        waveNumberText.text = $"Волна: {WaveSpawner.WaveNumber}/{WaveSpawner.MaxWaves}";
     }
 }

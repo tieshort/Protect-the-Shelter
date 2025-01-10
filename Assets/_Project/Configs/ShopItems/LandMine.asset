@@ -13,7 +13,18 @@ MonoBehaviour:
   m_Name: LandMine
   m_EditorClassIdentifier: 
   Price: 10
-  ItemName: Mine
+  ItemName:
+    m_TableReference:
+      m_TableCollectionName: GUID:1da9d39d1d1c3734c8ea2b80d390769a
+    m_TableEntryReference:
+      m_KeyId: 465432872280064
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   Item: {fileID: 8764433219686924026, guid: 657a84ca3a36bb64fabd1fa52b88221e, type: 3}
   AvailableItem: {fileID: 8114509838456435789, guid: 8dbde1a8be9f2af438987a25f64f4ef0, type: 3}
   UnavailableItem: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
